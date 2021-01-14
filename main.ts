@@ -1,9 +1,21 @@
+// Challenge 1 
 while (true) {
-    console.log("Sound level is -" + input.soundLevel())
+    console.log("Sound level is- " + input.soundLevel())
     if (input.soundLevel() > 150) {
-        light.setAll(light.rgb(255, 255, 255))
+        light.showAnimationFrame(light.rainbowAnimation)
     } else {
-        light.setAll(light.rgb(0, 0, 0))
+        pause(0)
+    }
+    
+}
+// Challenge 2
+while (true) {
+    console.log("Light level is- " + input.lightLevel())
+    if (input.lightLevel() > 0) {
+        music.setVolume(100)
+        music.wawawawaa.play()
+    } else {
+        pause(0)
     }
     
 }
