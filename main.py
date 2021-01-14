@@ -4,7 +4,7 @@ while True:
     if input.sound_level() > 150:
         light.show_animation_frame(light.rainbowAnimation)
     else:
-        pause(0)
+        light.clear()
         
 
 #Challenge 2
@@ -14,6 +14,5 @@ while True:
         music.set_volume(100)
         music.wawawawaa.play()
     else:
-        pause(0)
-
+        light.clear()
 #Challenge 3

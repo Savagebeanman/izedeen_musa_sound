@@ -4,7 +4,7 @@ while (true) {
     if (input.soundLevel() > 150) {
         light.showAnimationFrame(light.rainbowAnimation)
     } else {
-        pause(0)
+        light.clear()
     }
     
 }
@@ -15,7 +15,7 @@ while (true) {
         music.setVolume(100)
         music.wawawawaa.play()
     } else {
-        pause(0)
+        light.clear()
     }
     
 }
