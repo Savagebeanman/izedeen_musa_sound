@@ -19,4 +19,15 @@
 #Challenge 3
 while True:
     music.set_volume(100)
-    music.play_melody("C", 120)
+    music.play_melody("C C G G A A G ", 120)
+    pause(500)
+    music.play_melody("F F E E D D C", 120)
+    pause(500)
+    music.play_melody("G G F F E E D ", 120)
+    pause(500)
+    music.play_melody("G G F F E E D ", 120)
+    pause(500)
+    music.play_melody("C C G G A A G ", 120)
+    pause(500)
+    music.play_melody("F F E E D D C", 120)
+    pause(500)
