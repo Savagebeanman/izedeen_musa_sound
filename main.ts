@@ -14,7 +14,7 @@
 //         music.wawawawaa.play_until_done()    
 //     else:
 //         light.clear()        
-// Challenge 3
+// Challenge 3  
 while (true) {
     music.setVolume(100)
     music.playMelody("C C G G A A G ", 120)

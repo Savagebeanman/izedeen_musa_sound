@@ -16,7 +16,7 @@
 #    else:
 #        light.clear()        
 
-#Challenge 3
+#Challenge 3  
 while True:
     music.set_volume(100)
     music.play_melody("C C G G A A G ", 120)
