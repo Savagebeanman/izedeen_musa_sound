@@ -32,26 +32,46 @@
 // Project 3
 while (true) {
     music.setVolume(100)
-    if (input.lightLevel() < 20) {
+    if (input.soundLevel() <= 40) {
+        light
+    } else if (input.soundLevel() >= 40) {
         light.setPixelColor(0, light.rgb(0, 255, 0))
-    } else if (input.lightLevel() < 40) {
-        light.setPixelColor(0, light.rgb(20, 245, 0))
-    } else if (input.lightLevel() < 60) {
-        light.setPixelColor(0, light.rgb(40, 225, 0))
-    } else if (input.lightLevel() < 80) {
-        light.setPixelColor(0, light.rgb(60, 195, 0))
-    } else if (input.lightLevel() < 100) {
-        light.setPixelColor(0, light.rgb(80, 175, 0))
-    } else if (input.lightLevel() < 120) {
-        light.setPixelColor(0, light.rgb(110, 135, 0))
-    } else if (input.lightLevel() < 140) {
-        light.setPixelColor(0, light.rgb(140, 110, 0))
-    } else if (input.lightLevel() < 160) {
-        light.setPixelColor(0, light.rgb(170, 90, 0))
-    } else if (input.lightLevel() < 180) {
-        light.setPixelColor(0, light.rgb(200, 45, 0))
-    } else if (input.lightLevel() < 200) {
-        light.setPixelColor(0, light.rgb(255, 0, 0))
+        light.setPixelColor(1, light.rgb(0, 255, 0))
+    } else if (input.soundLevel() > 60) {
+        light.setPixelColor(0, light.rgb(0, 255, 0))
+        light.setPixelColor(1, light.rgb(0, 255, 0))
+        light.setPixelColor(2, light.rgb(20, 245, 0))
+        light.setPixelColor(3, light.rgb(20, 245, 0))
+        light.setPixelColor(4, light.rgb(40, 225, 0))
+        light.setPixelColor(5, light.rgb(40, 225, 0))
+    } else if (input.soundLevel() > 80) {
+        light.setPixelColor(0, light.rgb(0, 255, 0))
+        light.setPixelColor(1, light.rgb(0, 255, 0))
+        light.setPixelColor(2, light.rgb(20, 245, 0))
+        light.setPixelColor(3, light.rgb(20, 245, 0))
+        light.setPixelColor(4, light.rgb(40, 225, 0))
+        light.setPixelColor(5, light.rgb(40, 225, 0))
+        light.setPixelColor(6, light.rgb(60, 195, 0))
+        light.setPixelColor(7, light.rgb(60, 195, 0))
+    } else if (input.soundLevel() > 100) {
+        light.setPixelColor(0, light.rgb(0, 255, 0))
+        light.setPixelColor(1, light.rgb(0, 255, 0))
+        light.setPixelColor(2, light.rgb(20, 245, 0))
+        light.setPixelColor(3, light.rgb(20, 245, 0))
+        light.setPixelColor(4, light.rgb(40, 225, 0))
+        light.setPixelColor(5, light.rgb(40, 225, 0))
+        light.setPixelColor(6, light.rgb(60, 195, 0))
+        light.setPixelColor(7, light.rgb(60, 195, 0))
+        light.setPixelColor(4, light.rgb(80, 175, 0))
+    } else if (input.soundLevel() > 125 && input.lightLevel() < 10) {
+        music.wawawawaa.playUntilDone()
+        pause(5000)
+        light.setPixelColor(0, light.rgb(0, 255, 0))
+        light.setPixelColor(1, light.rgb(20, 245, 0))
+        light.setPixelColor(2, light.rgb(40, 225, 0))
+        light.setPixelColor(3, light.rgb(60, 195, 0))
+        light.setPixelColor(4, light.rgb(80, 175, 0))
+        light.setPixelColor(5, light.rgb(110, 135, 0))
     }
     
     if (input.lightLevel() < 10 && input.soundLevel() > 125) {

@@ -35,26 +35,63 @@
 #Project 3
 while True:
     music.set_volume(100)
-    if input.light_level() < 20:
-        light.set_pixel_color(0, light.rgb(0, 255, 0))  
-    elif  input.light_level() < 40:
-        light.set_pixel_color(0, light.rgb(20, 245, 0))
-    elif input.light_level() < 60:
-        light.set_pixel_color(0, light.rgb(40, 225, 0))
-    elif input.light_level() < 80:
-        light.set_pixel_color(0, light.rgb(60, 195, 0))
-    elif input.light_level() < 100:
-        light.set_pixel_color(0, light.rgb(80, 175, 0))
-    elif input.light_level() < 120:
-        light.set_pixel_color(0, light.rgb(110, 135, 0))
-    elif input.light_level() < 140:
-        light.set_pixel_color(0, light.rgb(140, 110, 0))
-    elif input.light_level() < 160:
-        light.set_pixel_color(0, light.rgb(170, 90, 0))
-    elif input.light_level() < 180:
-        light.set_pixel_color(0, light.rgb(200, 45, 0))
-    elif input.light_level() < 200:
-        light.set_pixel_color(0, light.rgb(255, 0, 0))
+    if input.sound_level() <= 40:
+        light.set.all
+    elif  input.sound_level() >= 40:
+        light.set_pixel_color(0, light.rgb(0, 255, 0))
+        light.set_pixel_color(1, light.rgb(0, 255, 0))
+        
+    
+    elif input.sound_level() > 60:
+        light.set_pixel_color(0, light.rgb(0, 255, 0))
+        light.set_pixel_color(1, light.rgb(0, 255, 0))  
+        light.set_pixel_color(2, light.rgb(20, 245, 0))
+        light.set_pixel_color(3, light.rgb(20, 245, 0))
+
+    elif input.sound_level() > 80:
+        light.set_pixel_color(0, light.rgb(0, 255, 0))
+        light.set_pixel_color(1, light.rgb(0, 255, 0))  
+        light.set_pixel_color(2, light.rgb(20, 245, 0))
+        light.set_pixel_color(3, light.rgb(20, 245, 0))
+        light.set_pixel_color(4, light.rgb(40, 225, 0))
+        light.set_pixel_color(5, light.rgb(40, 225, 0))
+
+        light.set_pixel_color(0, light.rgb(0, 255, 0))
+        light.set_pixel_color(1, light.rgb(0, 255, 0))  
+        light.set_pixel_color(2, light.rgb(20, 245, 0))
+        light.set_pixel_color(3, light.rgb(20, 245, 0))
+        light.set_pixel_color(4, light.rgb(40, 225, 0))
+        light.set_pixel_color(5, light.rgb(40, 225, 0))
+        light.set_pixel_color(6, light.rgb(60, 195, 0))
+        light.set_pixel_color(7, light.rgb(60, 195, 0))
+    
+    elif input.sound_level() > 100:
+
+        light.set_pixel_color(0, light.rgb(0, 255, 0))
+        light.set_pixel_color(1, light.rgb(0, 255, 0))  
+        light.set_pixel_color(2, light.rgb(20, 245, 0))
+        light.set_pixel_color(3, light.rgb(20, 245, 0))
+        light.set_pixel_color(4, light.rgb(40, 225, 0))
+        light.set_pixel_color(5, light.rgb(40, 225, 0))
+        light.set_pixel_color(6, light.rgb(60, 195, 0))
+        light.set_pixel_color(7, light.rgb(60, 195, 0))
+        light.set_pixel_color(8, light.rgb(80, 175, 0))
+    
+    elif input.sound_level() > 125 and input.light_level() < 10:
+        music.wawawawaa.play_until_done()
+        pause(5000)
+        light.set_pixel_color(0, light.rgb(0, 255, 0))
+        light.set_pixel_color(2, light.rgb(51, 204, 0))
+        light.set_pixel_color(5, light.rgb(102, 225, 0))
+        light.set_pixel_color(5, light.rgb(102, 225, 0))
+        light.set_pixel_color(4, light.rgb(153, 175, 0))
+        light.set_pixel_color(5, light.rgb(153, 175, 0))
+        light.set_pixel_color(6, light.rgb(204, 175, 0))
+        light.set_pixel_color(7, light.rgb(204, 175, 0))
+        light.set_pixel_color(8, light.rgb(255, 175, 0))
+        light.set_pixel_color(9, light.rgb(255, 175, 0))
+   
+    
         
     if input.light_level() < 10 and input.sound_level() > 125:
 
