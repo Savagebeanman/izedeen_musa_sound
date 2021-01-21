@@ -17,17 +17,33 @@
 #        light.clear()        
 
 #Challenge 3  
+#while True:
+#    music.set_volume(100)
+#    music.play_melody("C C G G A A G ", 120)
+#    pause(500)
+#    music.play_melody("F F E E D D C", 120)
+#    pause(500)
+#    music.play_melody("G G F F E E D ", 120)
+#    pause(500)
+#    music.play_melody("G G F F E E D ", 120)
+#    pause(500)
+#    music.play_melody("C C G G A A G ", 120)
+#    pause(500)
+#    music.play_melody("F F E E D D C", 120)
+#    pause(500)
+
+#Project 3
 while True:
     music.set_volume(100)
-    music.play_melody("C C G G A A G ", 120)
-    pause(500)
-    music.play_melody("F F E E D D C", 120)
-    pause(500)
-    music.play_melody("G G F F E E D ", 120)
-    pause(500)
-    music.play_melody("G G F F E E D ", 120)
-    pause(500)
-    music.play_melody("C C G G A A G ", 120)
-    pause(500)
-    music.play_melody("F F E E D D C", 120)
-    pause(500)
+    if input.light_level() < 10 and input.sound_level() > 125:
+        music.wawawawaa.play_until_done() 
+        pause(5000)
+
+    elif input.light_level() > 10 and input.sound_level() > 175:
+        music.pew_pew.play_until_done()
+        pause(5000)
+
+    elif input.sound_level() < 125:
+        pause(5000)
+
+    

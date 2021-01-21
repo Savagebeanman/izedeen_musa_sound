@@ -15,18 +15,31 @@
 //     else:
 //         light.clear()        
 // Challenge 3  
+// while True:
+//     music.set_volume(100)
+//     music.play_melody("C C G G A A G ", 120)
+//     pause(500)
+//     music.play_melody("F F E E D D C", 120)
+//     pause(500)
+//     music.play_melody("G G F F E E D ", 120)
+//     pause(500)
+//     music.play_melody("G G F F E E D ", 120)
+//     pause(500)
+//     music.play_melody("C C G G A A G ", 120)
+//     pause(500)
+//     music.play_melody("F F E E D D C", 120)
+//     pause(500)
+// Project 3
 while (true) {
     music.setVolume(100)
-    music.playMelody("C C G G A A G ", 120)
-    pause(500)
-    music.playMelody("F F E E D D C", 120)
-    pause(500)
-    music.playMelody("G G F F E E D ", 120)
-    pause(500)
-    music.playMelody("G G F F E E D ", 120)
-    pause(500)
-    music.playMelody("C C G G A A G ", 120)
-    pause(500)
-    music.playMelody("F F E E D D C", 120)
-    pause(500)
+    if (input.lightLevel() < 10 && input.soundLevel() > 125) {
+        music.wawawawaa.playUntilDone()
+        pause(5000)
+    } else if (input.lightLevel() > 10 && input.soundLevel() > 175) {
+        music.pewPew.playUntilDone()
+        pause(5000)
+    } else if (input.soundLevel() < 125) {
+        pause(5000)
+    }
+    
 }
