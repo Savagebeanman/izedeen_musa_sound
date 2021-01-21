@@ -32,6 +32,10 @@
 // Project 3
 while (true) {
     music.setVolume(100)
+    if (input.lightLevel() < 20) {
+        input.lightLevel()
+    }
+    
     if (input.lightLevel() < 10 && input.soundLevel() > 125) {
         music.wawawawaa.playUntilDone()
         pause(5000)

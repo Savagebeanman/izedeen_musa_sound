@@ -35,6 +35,8 @@
 #Project 3
 while True:
     music.set_volume(100)
+    if input.light_level() < 20:
+        light.set_pixel_color(0, #ff0000)
     if input.light_level() < 10 and input.sound_level() > 125:
 
         music.wawawawaa.play_until_done() 
