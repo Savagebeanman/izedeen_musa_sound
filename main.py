@@ -36,7 +36,26 @@
 while True:
     music.set_volume(100)
     if input.light_level() < 20:
-        light.set_pixel_color(0, #ff0000)
+        light.set_pixel_color(0, light.rgb(0, 255, 0))  
+    elif  input.light_level() < 40:
+        light.set_pixel_color(0, light.rgb(20, 245, 0))
+    elif input.light_level() < 60:
+        light.set_pixel_color(0, light.rgb(40, 225, 0))
+    elif input.light_level() < 80:
+        light.set_pixel_color(0, light.rgb(60, 195, 0))
+    elif input.light_level() < 100:
+        light.set_pixel_color(0, light.rgb(80, 175, 0))
+    elif input.light_level() < 120:
+        light.set_pixel_color(0, light.rgb(110, 135, 0))
+    elif input.light_level() < 140:
+        light.set_pixel_color(0, light.rgb(140, 110, 0))
+    elif input.light_level() < 160:
+        light.set_pixel_color(0, light.rgb(170, 90, 0))
+    elif input.light_level() < 180:
+        light.set_pixel_color(0, light.rgb(200, 45, 0))
+    elif input.light_level() < 200:
+        light.set_pixel_color(0, light.rgb(255, 0, 0))
+        
     if input.light_level() < 10 and input.sound_level() > 125:
 
         music.wawawawaa.play_until_done() 
